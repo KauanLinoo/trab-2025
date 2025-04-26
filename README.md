@@ -1,5 +1,5 @@
 README.MD
-# Site acessível sobre Tropicália
+# Site sobre a fauna e biodiversidade brasileira
 ## Sobre
 Refatoração de um site implementando recursos de acessibilidade no HTML, CSS e JS.
 ## Recursos de acessibilidade

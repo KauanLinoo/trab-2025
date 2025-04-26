@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Fauna Brasileira</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body aria-live="polite">
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center" aria-label="Menu principal">
+            <img src="img/t1.png" alt="Logotipo da Tropicália" class="nav-img" loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false" aria-controls="opcoes-acessibilidade">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista" aria-hidden="true">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5" aria-label="Seção inicial">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold invert-color"></h1> 
+                    <img src="img/título 2.png" alt="Logotipo secundário" class="mb-3" width="563" height="278" loading="lazy">
+                    <a href="#Mundo animal" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+            </div>
+            <img src="img/foto 1.png" class="img-fluid img-inicio" alt="">
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
+            <div class="container d-flex align-items-center">
+                <img src="img/f2.png" class="rounded-pill" width="273" height="331" loading="lazy" alt="Imagem de orca nadando">
+                <div class="col-5">
+                    <h2 aria-level="2" role="heading" class="invert-color">Diversidade e importância:</h2> 
+                    <p class="p-2">
+                        A fauna brasileira é incrivelmente diversa e rica, sendo uma das mais ricas do mundo, com mais de 100.000 espécies de animais. Esta biodiversidade inclui uma vasta gama de mamíferos, aves, répteis, anfíbios e peixes, com muitas espécies encontradas apenas no Brasil. Além disso, a fauna desempenha um papel fundamental no equilíbrio dos ecossistemas, contribuindo para a dispersão de sementes, polinização de plantas e controle de populações de outras espécies. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5 invert-color">Galeria</h2> 
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/g1.webp" class="img-fluid rounded-5" loading="lazy" alt="Imagem 1 da galeria">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/g2.jpg" class="img-fluid rounded-5" loading="lazy" alt="Imagem 2 da galeria">
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/g3.webp" class="img-fluid rounded-5" loading="lazy" alt="Imagem 3 da galeria">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/g4.webp" class="img-fluid rounded-5" class="img-fluid rounded-5" loading="lazy" alt="Imagem 4 da galeria">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" aria-label="Formulário de contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3 invert-color">Entre em contato</h2> 
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic" aria-label="Redes sociais e informações do projeto">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">PROJETO DESENVOLVIDO POR: Kauan, Maria Clara, Brenda, Yasmin e Gustavo.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

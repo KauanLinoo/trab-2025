@@ -1,7 +1,7 @@
 README.MD
 # Site sobre a fauna e biodiversidade brasileira
 ## Sobre
-Refatoração de um site implementando recursos de acessibilidade no HTML, CSS e JS.
+fala sobre os animais da fauna brasileira
 ## Recursos de acessibilidade
 - Atributos aria
 - Alt
